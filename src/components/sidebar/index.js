@@ -1,3 +1,3 @@
-import sidebar from './sidebar.js';
+import Sidebar from './Sidebar.js';
 
-export default sidebar;
+export default Sidebar;
