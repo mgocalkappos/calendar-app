@@ -3,25 +3,27 @@ import PropTypes from 'prop-types';
 import styles from './Sidebar.module.css';
 
 const Sidebar = (props) => {
-    let {  } = props;
+    let { children, width, height } = props;
 
 
     return (
-        <div>
-
-        </div>
+      <div className={styles.sidebar} style={{width: width, minHeight: height }}>
+        <React.Fragment>{children}</React.Fragment>
+      </div>
     );
 };
 
-Searchbar.propTypes = {
-
+Sidebar.propTypes = {
+  tabs: PropTypes.string.isRequired, //for now
+  width: PropTypes.string,
+  height: PropTypes.string,
 };
 
-Searchbar.defaultProps = {
-  
+Sidebar.defaultProps = {
+  width: "25vw",
 };
 
 
 
 
-export default Searchbar;
+export default Sidebar;
