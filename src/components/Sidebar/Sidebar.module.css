@@ -1,5 +1,5 @@
 @value colors: "../../styles/colors.css";
-@value softWhite, pacificBlue, midnight from colors;
+@value robinsEgg, pacificBlue, midnight from colors;
 
 .sidebar {
     /* height: 100%; */

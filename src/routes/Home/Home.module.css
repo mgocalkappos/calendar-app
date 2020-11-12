@@ -1,7 +1,7 @@
 @value colors: "../../styles/colors.css";
-@value softWhite, pacificBlue, midnight from colors;
+@value robinsEgg, pacificBlue, midnight from colors;
 
 body {
-  background-color: softWhite;
+  background-color: robinsEgg;
   color: midnight;
 }
