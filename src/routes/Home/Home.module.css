@@ -1,3 +1,7 @@
+@value colors: "../../styles/colors.css";
+@value softWhite, pacificBlue, midnight from colors;
+
 body {
-  background-color: white;
+  background-color: softWhite;
+  color: midnight;
 }
