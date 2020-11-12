@@ -26,7 +26,4 @@ Sidebar.defaultProps = {
   width: "25vw",
 };
 
-
-
-
 export default Sidebar;
