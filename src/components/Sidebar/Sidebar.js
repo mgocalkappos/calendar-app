@@ -9,6 +9,9 @@ const Sidebar = (props) => {
     return (
       <div className={styles.sidebar} style={{width: width, minHeight: height }}>
         <React.Fragment>{children}</React.Fragment>
+        <div>
+          <div className={styles.separator}/>
+        </div>
       </div>
     );
 };

@@ -11,3 +11,9 @@
     background-color: pacificBlue;
     color: midnight;
 }
+
+.separator {
+   height: .5px;
+   flex: 1;
+   background-color: midnight;
+}
