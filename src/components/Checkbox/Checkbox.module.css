@@ -1,0 +1,13 @@
+@value colors: "../../styles/colors.css";
+@value robinsEgg, pacificBlue, midnight from colors;
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid midnight;
+}
