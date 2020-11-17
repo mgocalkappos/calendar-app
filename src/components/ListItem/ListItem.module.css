@@ -20,10 +20,12 @@
 }
 
 .delete {
+  opacity: 0;
   grid-area: 1 / 4 / 2 / 5;
 }
 
 .delete:hover {
+  opacity: 100;
   cursor: pointer;
 }
 
