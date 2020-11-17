@@ -9,7 +9,7 @@
   grid-row-gap: 0px;
   background-color: blueSapphire;
   width: 30vw;
-  padding: 1vw;
+  padding: 1vw .1vw 1vw .1vw;
   border-width: 0px 1px 1px 1px;
   border-style: solid;
   border-color: gunmetal;
