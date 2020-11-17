@@ -1,0 +1,36 @@
+@value colors: "../../styles/colors.css";
+@value blueSapphire, gunmetal, blueJay from colors;
+
+.listitem {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: blueSapphire;
+  width: 30vw;
+  padding: 1vw;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: gunmetal;
+}
+
+.label {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.delete {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}

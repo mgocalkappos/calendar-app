@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ListItem.module.css';
 import Checkbox from '../../components/Checkbox';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default class ListItem extends Component {
   constructor(props) {
@@ -15,7 +17,7 @@ export default class ListItem extends Component {
   }
 
   static propTypes = {
-    label: PropTypes.string,
+    label: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -37,20 +39,21 @@ export default class ListItem extends Component {
         else if (disabled) inputContainerStyle += ` ${styles.disabledInputContainer}`;
         */}
         return (
-            <div>
-              <h3> Checklist </h3>
-              <Checkbox
-                checked = {this.state.isChecked}
-                onClick = {() => this.toggleCheck()}
-              />
+            <div className = {styles.listitem}>
+              <div className = {styles.label}> { label } </div>
+              <div className = {styles.delete}>
+                <FontAwesomeIcon icon={faTrashAlt} />
+              </div>
+              <div className = {styles.checkbox}>
+                <Checkbox
+                  checked = {this.state.isChecked}
+                  onClick = {() => this.toggleCheck()}
+                />
+              </div>
             </div>
         );
     }
 }
-
-{/*  toggleCheck = (isChecked) => {
-      this.setState({ isChecked });
-  }; */}
 
 {/*const Checklist = (props) => {
     let {  } = props;
