@@ -29,7 +29,7 @@
 .textInputButton {
     background-color: blueSapphire;
     /* font-family: 'Montserrat', sans-serif; */
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(225, 238, 238, 0.6); /* robinsEgg */
     height: 100%;
     width: 15%;
     border-radius: 0px 5px 5px 0px;
