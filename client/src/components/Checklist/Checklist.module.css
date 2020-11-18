@@ -1,0 +1,7 @@
+@value colors: "../../styles/colors.css";
+@value robinsEgg, pacificBlue, midnight from colors;
+
+.checklist {
+  display: flex;
+  justify-content: center;
+}
