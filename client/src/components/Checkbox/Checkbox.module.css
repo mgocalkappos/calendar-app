@@ -6,8 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    width: 15px;
-    height: 15px;
+    width: .7vw;
+    height: .7vw;
     border-radius: 2px;
     border: 2px solid midnight;
     background-color: rgb(225, 238, 238, 0.3); /* robinsEgg */
