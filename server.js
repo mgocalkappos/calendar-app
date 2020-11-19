@@ -1,20 +1,13 @@
 const express = require('express');
 const app = express();
 
-app.get('/api/customers', (req, res) => {
-  const customers = [
-    {id: 1, firstName: 'John', lastName: 'Doe'},
-    {id: 2, firstName: 'Mary', lastName: 'Swanson'},
-    {id: 3, firstName: 'Steve', lastName: 'Smith'},
-  ];
-  res.json(customers);
-});
-
 app.get('/api/listItems', (req, res) => {
   const listItems = [
     {id: 1, title: 'Buy Groceries'},
     {id: 2, title: 'Clean bathroom'},
     {id: 3, title: 'Exercise'},
+    {id: 4, title: 'Call doctor'},
+    {id: 5, title: 'Pack shop orders'},
   ];
   res.json(listItems);
 })
