@@ -1,5 +1,5 @@
 @value colors: "../../styles/colors.css";
-@value blueSapphire, gunmetal, blueJay from colors;
+@value robinsEgg, blueSapphire, blueJay, pacificBlue, gunmetal from colors;
 
 .listitem {
   display: grid;
@@ -8,18 +8,27 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: blueSapphire;
-  width: 30vw;
+  background-image: linear-gradient(to bottom, blueSapphire, blueJay);
+  width: 100%;
+  height: 1vw;
   padding: 1vw .1vw 1vw .1vw;
   border-width: 0px 1px 1px 1px;
   border-style: solid;
   border-color: gunmetal;
+  box-shadow: inset 0 0 7px 0 rgb(24, 52, 70, 0.6); /* midnight */
+  color: robinsEgg;
 }
 
 .label {
   grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15%;
+  font-size: .7vw;
 }
 
 .delete {
+  font-size: .9vw;
   opacity: 0;
   grid-area: 1 / 4 / 2 / 5;
 }
