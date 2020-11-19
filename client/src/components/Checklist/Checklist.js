@@ -24,29 +24,39 @@ export default class Checklist extends Component {
 
   };
 
+  componentDidMount() {
+    fetch('/api/listItems')
+      .then(res => res.json())
+      .then(listItems => this.setState({listItems}, () => console.log('ListItems fetched...', listItems)));
+  }
+
   render() {
         let { title } = this.props;
 
         let {  } = this.state;
 
         return (
-          <div className="todoListMain">
-            <div className="header">
-              <TextInput
-                 label = 'Add To Do...'
-                 buttonLabel = 'Add'
-                 onClick = {() => {alert('Button Clicked')}}
-                 textInput = {(a) => this._inputElement = a}
-                 onChange = { this.addItem }
-              />
-              <ul> {/*{this.state.results.map(result =>
-                <li>
-                  <ListItem
-                    label = "Do groceries"
-                  />
-                </li>
-              )}*/}
-              </ul>
+          <div className={styles.checklist}>
+            <div className={styles.top}>
+              <div className={styles.title}> {title} </div>
+              <div className={styles.textInput}>
+                <TextInput
+                   label = 'Add To Do...'
+                   buttonLabel = 'Add'
+                   onClick = {() => {alert('Button Clicked')}}
+                   textInput = ''
+                   onChange = {() => {alert('onChange')}}
+                />
+              </div>
+            </div>
+            <div className={styles.itemList}>
+                {this.state.listItems.map(listItems =>
+                  <div key={listItems.id}>
+                    <ListItem
+                      label = {listItems.title}
+                      />
+                  </div>
+                )}
             </div>
           </div>
         );
