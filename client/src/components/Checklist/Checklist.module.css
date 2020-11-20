@@ -1,5 +1,6 @@
 @value colors: "../../styles/colors.css";
 @value robinsEgg, pacificBlue, blueSapphire, blueJay, midnight from colors;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 .checklist {
   display: flex;
@@ -21,7 +22,10 @@
   background-image: linear-gradient(to bottom, blueSapphire, blueJay);
   color: robinsEgg;
   font-size: 2vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   box-shadow: inset 0 0 5px 0 rgb(225, 238, 238, 0.6); /* robinsEgg */
+  text-shadow: 2px 2px 3px midnight;
 }
 
 .textInput {
