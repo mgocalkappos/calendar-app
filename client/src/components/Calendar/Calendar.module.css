@@ -1,0 +1,9 @@
+@value colors: "../../styles/colors.css";
+@value robinsEgg, pacificBlue, midnight from colors;
+
+.calendar {
+  width: 50vw;
+  height: 70vh;
+  background-color: midnight;
+  color: robinsEgg;
+}

@@ -8,7 +8,7 @@ const Calendar = (props) => {
 
 
     return (
-      <div>
+      <div className={styles.calendar}>
         Calendar
       </div>
     );
