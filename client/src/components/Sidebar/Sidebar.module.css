@@ -7,16 +7,11 @@
     display: flex;
     flex-direction: column;
     box-shadow: .1vw .2vw .5vw rgb(24, 52, 70, 0.6); /* midnight */
+    box-shadow: inset .1vw .2vw .5vw rgb(24, 52, 70, 0.6); /* midnight */
     border-color: midnight;
     background-color: pacificBlue;
     color: midnight;
-    font-size: 1.5vh;
+    font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-}
-
-.separator {
-   height: .5px;
-   flex: 1;
-   background-color: midnight;
 }
