@@ -34,7 +34,6 @@
 }
 
 .itemList {
-  grid-area:  2 / 1 / 4 / 2;
   overflow: auto;
   overflow-x: hidden;
 }
