@@ -33,14 +33,18 @@ export default class ListItem extends Component {
 
         let { isChecked } = this.state;
 
-        let inputContainerStyle = styles.inputContainer;
+        let MAX_LENGTH = 35;
 
-        {/*if (isChecked) inputContainerStyle += ` ${styles.activeInputContainer}`;
-        else if (disabled) inputContainerStyle += ` ${styles.disabledInputContainer}`;
-        */}
+        if (label.length >= MAX_LENGTH) {
+          var lbl = label.substr(0, MAX_LENGTH) + "\u2026";
+        }
+        else {
+          var lbl = label;
+        }
+
         return (
             <div className = {styles.listitem}>
-              <div className = {styles.label}> { label } </div>
+              <div className = {styles.label}> { lbl } </div>
               <div className = {styles.delete}>
                 <FontAwesomeIcon icon={faTrashAlt} onClick={() => {alert('Button Clicked')}} />
               </div>
