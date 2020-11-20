@@ -27,7 +27,7 @@ export default class Checklist extends Component {
   componentDidMount() {
     fetch('/api/listItems')
       .then(res => res.json())
-      .then(listItems => this.setState({listItems}, () => console.log('ListItems fetched...', listItems)));
+      .then(listItems => this.setState({listItems}));
   }
 
   render() {
