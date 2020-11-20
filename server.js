@@ -14,6 +14,15 @@ app.get('/api/listItems', (req, res) => {
   res.json(listItems);
 })
 
+app.get('/api/calendars', (req, res) => {
+  const calendars = [
+    {id: 1, title: 'Friends'},
+    {id: 2, title: 'Family'},
+    {id: 3, title: 'Work'},
+  ];
+  res.json(calendars);
+})
+
 const port = 5000;
 
 app.listen(port, () => console.log('Server started on port 5000'));
