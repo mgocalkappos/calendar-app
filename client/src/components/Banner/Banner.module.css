@@ -1,2 +1,27 @@
 @value colors: "../../styles/colors.css";
-@value robinsEgg, pacificBlue, midnight from colors;
+@value robinsEgg, blueSapphire, midnight from colors;
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat&display=swap');
+
+/* font-family: 'Bungee', cursive; */
+/* font-family: 'Montserrat', sans-serif; */
+
+.banner {
+  background-color: blueSapphire;
+  color: robinsEgg;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  height: 9vh;
+  text-align: center;
+}
+
+.calendarTitle {
+  float: middle;
+  font-size: 4vh;
+  font-family: 'Bungee', cursive;
+}
+
+.logo {
+  float: left;
+  padding-left: 1vw;
+  height: 95%;
+}
