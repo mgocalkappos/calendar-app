@@ -8,6 +8,8 @@ app.get('/api/listItems', (req, res) => {
     {id: 3, title: 'Exercise'},
     {id: 4, title: 'Call doctor'},
     {id: 5, title: 'Pack shop orders'},
+    {id: 6, title: 'This is a very long to do item, it is really quite long'},
+    {id: 7, title: 'Another task'},
   ];
   res.json(listItems);
 })
