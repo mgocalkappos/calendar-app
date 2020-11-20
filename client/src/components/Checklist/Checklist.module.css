@@ -44,8 +44,8 @@
 }
 
 .itemList::-webkit-scrollbar-track {
+  background: midnight;
   box-shadow: inset 0 0 3px grey;
-  border-radius: 10px;
 }
 
 .itemList::-webkit-scrollbar-thumb {
