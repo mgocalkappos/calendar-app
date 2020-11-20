@@ -46,7 +46,10 @@ export default class ListItem extends Component {
             <div className = {styles.listitem}>
               <div className = {styles.label}> { lbl } </div>
               <div className = {styles.delete}>
-                <FontAwesomeIcon icon={faTrashAlt} onClick={() => {alert('Button Clicked')}} />
+                <FontAwesomeIcon
+                  icon={faTrashAlt}
+                  onClick={() => {alert('Button Clicked')}}
+                />
               </div>
               <div className = {styles.checkbox}>
                 <Checkbox
