@@ -12,23 +12,20 @@ export default class Home extends Component {
           <div className={styles.header}>
             <Banner
               calendarTitle = 'My Calendar'
-            />
+              />
           </div>
           <div className={styles.sidebar}>
-            <Sidebar width="15vw" height="87vh">
-                <h2> Calendar </h2>
-                <h2> Calendar 2 </h2>
-            </Sidebar>
+            <Sidebar width="15vw" height="87vh"/>
           </div>
           <div className={styles.content}>
             <div className={styles.toDoList}>
               <Checklist
-                  title = 'To Do List'
+                title = 'To Do List'
                 />
             </div>
             <div className={styles.toBuyList}>
               <Checklist
-                  title = 'To Buy List'
+                title = 'To Buy List'
                 />
             </div>
             <div className={styles.calendar}>
