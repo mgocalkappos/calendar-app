@@ -15,3 +15,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
+.add {
+  box-shadow: 0vw .6vw .5vw -.5vw rgb(24, 52, 70, 0.6); /* midnight */
+}

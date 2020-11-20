@@ -46,7 +46,7 @@ export default class Checklist extends Component {
                   </div>
                 )}
             </div>
-            <div>
+            <div className={styles.add}>
               <SidebarTab
                 calendarTitle = '+'
                 />
