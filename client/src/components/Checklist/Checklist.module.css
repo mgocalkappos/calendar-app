@@ -2,25 +2,19 @@
 @value robinsEgg, pacificBlue, blueSapphire, blueJay, midnight from colors;
 
 .checklist {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 20vw;
-  height: 30vh;
+  justify-content: center;
+  height: 33vh;
 }
 
 .top {
-  grid-area: 1 / 1 / 2 / 2;
+
 }
 
 .title {
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: .7vh;
+  padding-bottom: .7vh;
   border-radius: 4px 4px 0px 0px;
   border-color: midnight;
   background-color: blueSapphire;
@@ -39,12 +33,8 @@
   grid-area:  2 / 1 / 4 / 2;
   overflow: auto;
   overflow-x: hidden;
-  /* scrollbar-width: none; */
- /* -ms-overflow-style: none; */
 }
 
-
-/* Most Browsers */
 .itemList::-webkit-scrollbar {
   /* display: none; */
   width: .5vw;
