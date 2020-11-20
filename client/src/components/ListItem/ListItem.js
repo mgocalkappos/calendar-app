@@ -45,17 +45,19 @@ export default class ListItem extends Component {
         return (
             <div className = {styles.listitem}>
               <div className = {styles.label}> { lbl } </div>
-              <div className = {styles.delete}>
-                <FontAwesomeIcon
-                  icon={faTrashAlt}
-                  onClick={() => {alert('Button Clicked')}}
-                />
-              </div>
-              <div className = {styles.checkbox}>
-                <Checkbox
-                  checked = {this.state.isChecked}
-                  onClick = {() => this.toggleCheck()}
-                />
+              <div className = {styles.actionItems}>
+                <div className = {styles.delete}>
+                  <FontAwesomeIcon
+                    icon={faTrashAlt}
+                    onClick={() => {alert('Button Clicked')}}
+                  />
+                </div>
+                <div className = {styles.checkbox}>
+                  <Checkbox
+                    checked = {this.state.isChecked}
+                    onClick = {() => this.toggleCheck()}
+                  />
+                </div>
               </div>
             </div>
         );

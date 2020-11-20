@@ -2,11 +2,9 @@
 @value robinsEgg, blueSapphire, blueJay, pacificBlue, gunmetal from colors;
 
 .listitem {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: blueSapphire;
   background-image: linear-gradient(to bottom, blueSapphire, blueJay);
   width: 100%;
@@ -20,26 +18,30 @@
 }
 
 .label {
-  grid-area: 1 / 1 / 2 / 3;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 15%;
+  float: left;
+  padding-left: 7%;
   font-size: .7vw;
+  align-self: flex-start;
+}
+
+.actionItems {
+  display: flex;
+  align-items: center;
+  padding-right: 1vw;
 }
 
 .delete {
   font-size: .9vw;
   opacity: 0;
-  grid-area: 1 / 4 / 2 / 5;
 }
 
 .delete:hover {
-  opacity: 100;
+  opacity: 75%;
   cursor: pointer;
 }
 
 .checkbox {
-  grid-area: 1 / 5 / 2 / 6;
+  padding-left: 1vw;
 }
 
 .checkbox:hover {
