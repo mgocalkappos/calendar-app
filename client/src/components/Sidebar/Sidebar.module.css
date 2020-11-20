@@ -5,8 +5,7 @@
     /* height: 100%; */
     display: flex;
     flex-direction: column;
-    border-right: 1px solid;
-    border-radius: 0;
+    box-shadow: .1vw .2vw .5vw rgb(24, 52, 70, 0.6); /* midnight */
     border-color: midnight;
     background-color: pacificBlue;
     color: midnight;
