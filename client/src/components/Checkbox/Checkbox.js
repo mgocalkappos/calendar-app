@@ -9,6 +9,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
    <FontAwesomeIcon icon="coffee" />
    <i class="fas fa-check"></i>
    */}
+   
 
 const Checkbox = (props) => {
     let { checked, onClick } = props;
